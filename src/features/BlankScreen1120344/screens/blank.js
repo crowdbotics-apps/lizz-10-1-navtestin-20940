@@ -40,6 +40,17 @@ export class _Blank extends React.Component {
       >
         This pink button will go to blank screen 0
       </Button>
+      <Text style={this.props.themedStyle.Text_7}>
+        This is some text to provide some space between the button and the next
+        piece of text
+      </Text>
+      <TouchableOpacity
+        onPress={() => this.props.navigation.navigate("BlankScreen0120292")}
+      >
+        <Text style={this.props.themedStyle.Text_9}>
+          Pressing this text should go to blank screen 0
+        </Text>
+      </TouchableOpacity>
     </View>
   )
 }
@@ -130,6 +141,66 @@ export default Blank = withStyles(_Blank, theme => ({
     borderBottomWidth: 0,
     borderRadius: 0,
     textAlign: "center",
+    textAlignVertical: "center",
+    textDecorationLine: "none",
+    textTransform: "none",
+    lineHeight: 12,
+    letterSpacing: 0
+  },
+  Text_7: {
+    marginLeft: 0,
+    marginRight: 0,
+    marginTop: 5,
+    marginBottom: 5,
+    paddingLeft: 5,
+    paddingRight: 5,
+    paddingTop: 5,
+    paddingBottom: 5,
+    overflow: "visible",
+    fontSize: 12,
+    color: "#000000",
+    backgroundColor: "#ffffff",
+    fontStyle: "normal",
+    fontWeight: "normal",
+    borderColor: "#000000",
+    borderStyle: "solid",
+    borderWidth: 0,
+    borderLeftWidth: 0,
+    borderRightWidth: 0,
+    borderTopWidth: 0,
+    borderBottomWidth: 0,
+    borderRadius: 0,
+    textAlign: "left",
+    textAlignVertical: "center",
+    textDecorationLine: "none",
+    textTransform: "none",
+    lineHeight: 12,
+    letterSpacing: 0
+  },
+  Text_9: {
+    marginLeft: 0,
+    marginRight: 0,
+    marginTop: 5,
+    marginBottom: 5,
+    paddingLeft: 5,
+    paddingRight: 5,
+    paddingTop: 5,
+    paddingBottom: 5,
+    overflow: "visible",
+    fontSize: 12,
+    color: "#e123d1",
+    backgroundColor: "#ffffff",
+    fontStyle: "normal",
+    fontWeight: "normal",
+    borderColor: "#000000",
+    borderStyle: "solid",
+    borderWidth: 0,
+    borderLeftWidth: 0,
+    borderRightWidth: 0,
+    borderTopWidth: 0,
+    borderBottomWidth: 0,
+    borderRadius: 0,
+    textAlign: "left",
     textAlignVertical: "center",
     textDecorationLine: "none",
     textTransform: "none",
