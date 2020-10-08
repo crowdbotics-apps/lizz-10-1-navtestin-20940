@@ -25,9 +25,11 @@ export class _Blank extends React.Component {
   state = {}
 
   render = () => (
-    <View style={this.props.themedStyle.View_1}>
-      <Text style={this.props.themedStyle.Text_2}>This is blank screen 0</Text>
+    <View style={styles.View_1}>
+      <Text style={styles.Text_2}>This is blank screen 0 _ edited</Text>
       <Button
+        title="This will go to blank screen 1"
+        color="#3366FF"
         textStyle={{
           fontSize: 12,
           color: "#000000",
@@ -35,11 +37,9 @@ export class _Blank extends React.Component {
           fontWeight: "normal",
           fontStyle: "normal"
         }}
-        style={this.props.themedStyle.Button_4}
-        onPress={() => alert("Pressed!")}
-      >
-        This will go to blank screen 1
-      </Button>
+        style={styles.Button_4}
+        onPress={() => this.props.navigation.navigate("BlankScreen1120344")}
+      />
     </View>
   )
 }
@@ -75,6 +75,7 @@ export default Blank = withStyles(_Blank, theme => ({
     borderRadius: 0,
     backgroundSize: "auto"
   },
+
   Text_2: {
     marginLeft: 0,
     marginRight: 0,
@@ -105,6 +106,7 @@ export default Blank = withStyles(_Blank, theme => ({
     lineHeight: 12,
     letterSpacing: 0
   },
+
   Button_4: {
     width: "100%",
     marginLeft: 0,
